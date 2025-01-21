@@ -5,7 +5,7 @@ function palindrome(str){
 	for(let i = 0 ; i<= str.length; i++){
 		palindrome = palindrome + str[i];
 	}
-	if(str === palindrome){
+	if(str === palindrome.trim()){
 		return true;
 	}
 	return false;

@@ -1,11 +1,11 @@
 // complete the given function
 
 function palindrome(str){
-	let pallindrom = "";
+	let reversedStr = "";
 	for(let i = str.length-1; i >= 0; i--){
-      pallindrom = pallindrom + str[i];		
+      pallindrom = reversedStr + str[i];		
 	}
-	if(str.toLowerCase() === pallindrom.toLowerCase()){
+	if(str.toLowerCase() === reversedStr.toLowerCase()){
 		return true;
 	}
 	return false;

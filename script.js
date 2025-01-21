@@ -2,13 +2,12 @@
 
 function palindrome(str){
 	let pallindrom = "";
-	for(let i = 0 ; i<= str.length; i++){
-		palindrome = palindrome + str[i];
+	for(let i = str.length; i > 0; i--){
+      pallindrom = palindrome + str[i];		
 	}
-	if(str === palindrome.trim()){
+	if(str.toLowerCase() === pallindrom.toLowerCase()){
 		return true;
 	}
 	return false;
-
 }
 module.exports = palindrome
